@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Social Media Cards</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fefefe;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #333;
+      width: 260px;
+      padding: 30px 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card.special {
+      background: #e91e63;
+      color: #fff;
+      border: none;
+    }
+
+    .card .icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin: 10px 0;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .card button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      cursor: pointer;
+      background: #000;
+      color: #fff;
+      transition: background 0.3s ease;
+    }
+
+    .card.special button {
+      background: #fff;
+      color: #e91e63;
+    }
+
+    .card button:hover {
+      opacity: 0.9;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="card-container">
+    
+    <div class="card">
+      <div class="icon">
+        <i class="fa-brands fa-twitter"></i></div>
+      <h3>TWITTER</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expodita ullam aliquid non eligendi, nemo est neque reiciendis error?</p>
+      <button>READ MORE</button>
+    </div>
+
+   
+    <div class="card special">
+      <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+      <h3>INSTAGRAM</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expodita ullam aliquid non eligendi, nemo est neque reiciendis error?</p>
+      <button>READ MORE</button>
+    </div>
+
+    <div class="card">
+      <div class="icon"><i class="fa-brands fa-youtube"></i></div>
+      <h3>YOUTUBE</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expodita ullam aliquid non eligendi, nemo est neque reiciendis error?</p>
+      <button>READ MORE</button>
+    </div>
+  </div>
+
+</body>
+</html>
