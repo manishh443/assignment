@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wash Your Hands</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #eafff9;
+      padding: 50px 30px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Arial Black', sans-serif;
+      font-size: 60px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      position: relative;
+    }
+
+    h1::before {
+      content: "WASH YOUR HANDS!";
+      position: absolute;
+      left: 4px;
+      top: 4px;
+      z-index: -1;
+      color: rgba(0, 0, 0, 0.2);
+      text-shadow: 
+        2px 2px 0 #ff6f61,
+        4px 4px 0 #ffa07a,
+        6px 6px 0 #20b2aa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>wash your hands!</h1>
+  </div>
+</body>
+</html>
