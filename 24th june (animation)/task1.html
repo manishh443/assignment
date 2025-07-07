@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Animation Assignment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: brown;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .task1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 8px;
+    }
+
+    .task1 .smooth-button {
+      padding: 12px 24px;
+      background-color: blue;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.5s, transform 0.5s;
+    }
+
+    .task1 .smooth-button:hover {
+      background-color: blue;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  
+  <section class="task1">
+    <button class="smooth-button">Hover Me</button>
+  </section>
+
+</body>
+</html>
