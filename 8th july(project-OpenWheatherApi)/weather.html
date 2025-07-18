@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Api</title>
+   <link rel="stylesheet" href="Weather.css">
+</head>
+<body>
+    <div class="container">
+        <div class="MainBox">
+            <h1 class="Wea">Weather Check</h1>
+            <div class="StateWeather">
+                <label for="State">Enter Location: </label>
+                <input type="text" id="State">
+            </div>
+          <button class="Search">Search</button>
+            <div class="ApiFetch">
+               <h2 class="CityState">Jaipur,India</h2>
+               <div class="FetchTemp">25.5°C</div>
+               <p class="FetchWeatherCond">Clear</p>
+               <div class="conditions">
+                <div class="Subconditions">
+                    <div class="PartsSubCond">
+                        <div class="logo">💧</div>
+                        <div class="text humidity">Humidity: <br> 28%</div>
+                    </div>
+                    <div class="PartsSubCond">
+                        <div class="logo">💨</div>
+                        <div class="text  wind">Wind: <br> 9.8 m/s</div>
+                    </div>
+                </div>
+                <div class="Subconditions">
+                    <div class="PartsSubCond">
+                        <div class="logo">🌡</div>
+                        <div class="text Feels">Feels Like<br> 31.2°C</div>
+                    </div>
+                    <div class="PartsSubCond">
+                        <div class="logo">👁️</div>
+                        <div class="text Visi">Visibility: <br> 6000 m</div>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <script src="Weather.js"></script>
+</body>
+</html>
